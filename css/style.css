@@ -85,16 +85,33 @@ body{
     text-align: center;
 }
 
-.footer-flexbox{
+/* .footer-flexbox{
     justify-content: space-evenly;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     list-style: none;
     background-color: rgb(153, 203, 243);
+    padding-top: 1%;
+    padding-bottom: 1%;
+} */
+
+.footer-flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: azure;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
-footer div ul li a{
+
+.footer-flexbox div img{
+    height: 40px;
+    width: 40px;
     text-decoration: none;
 }
-
-
+.footer-flexbox div p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
