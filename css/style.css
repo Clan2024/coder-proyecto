@@ -1,35 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
 *{
     margin: 0%;
     padding: 0%;
 }
-nav a{
-    text-decoration: none;
-    color: blueviolet;
+.container-fluid{
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
-.flexbox ul{
-    justify-content: space-evenly;
+.navbar-brand{
+    font-family: "DynaPuff";
+    color: rgb(20, 146, 127);
+    font-size: 2rem;
+}
+.hero{
     display: flex;
-    flex-wrap: wrap;
-    text-decoration: none;
+    justify-content: center;
     align-items: center;
-    list-style: none;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/hero-casi-perfecto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    align-items: center;
+    justify-content: center;
 }
+.hero-titulo{
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-left: 2px solid;
 
-
-header {
-    background-color: lavender;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-.hero img {
-    width: 99vw;
-    height: 100dvh;
-}
-.hero h2{
-    font-size: 40px;
-    color: rgb(98, 175, 243);
 }
 .productos{
     justify-content: space-evenly;
@@ -53,13 +61,14 @@ h1{
     font-weight: 600;
     color: rgb(11, 1, 20);
     text-align: center;
+    padding-top: 4%;
 }
 main div h2{
     font-size: 2em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
-    color: rgb(123, 37, 199);
-    text-align: left;
+    color: rgb(1, 1, 20);
+    text-align:center;
     padding-bottom: 2%;
     padding-top: 2%;
     padding-left: 3%;
@@ -87,15 +96,41 @@ body{
     height: 400px;
 }
 .productos{
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.footer{
-    text-align: center;
-    background-color: rgb(248, 196, 224);
+/* .footer-flexbox{
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    background-color: rgb(153, 203, 243);
+    padding-top: 1%;
+    padding-bottom: 1%;
+} */
+
+.footer-flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: azure;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    align-items: center;
 }
-footer ul li a{
+
+.footer-flexbox div img{
+    height: 40px;
+    width: 40px;
     text-decoration: none;
 }
-
-
+.footer-flexbox div p{
+    font-family: "DynaPuff", serif;
+    color: rgb(11, 1, 26);
+    border-bottom: 2px solid;
+    font-size: 19px;
+}
