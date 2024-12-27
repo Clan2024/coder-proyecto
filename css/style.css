@@ -98,8 +98,6 @@ body{
 .productos{
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
-    padding-bottom: 2%;
 }
 
 /* .footer-flexbox{
@@ -129,11 +127,10 @@ body{
     height: 40px;
     width: 40px;
     text-decoration: none;
-    
 }
 .footer-flexbox div p{
     font-family: "DynaPuff", serif;
-    color: rgb(175, 158, 202);
+    color: rgb(11, 1, 26);
     border-bottom: 2px solid;
     font-size: 19px;
 }
