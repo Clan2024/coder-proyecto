@@ -39,38 +39,63 @@
                 </div>
             </nav>
           </header>
-    <main> 
+    <main class="personaliza-intro"> 
         <section>
            <h2>Cuentanos sobre tu proyecto</h2> 
-           <p>Queremos saber mas sobre tu proyecto, para ayudarte a crearlo, resuelve estas simples preguntas y nos contactaremos contigo</p>
+           <p>Queremos saber mas sobre tu proyecto para ayudarte a crearlo. Resuelve estas simples preguntas y nos contactaremos contigo</p>
          </section>
-         <section></section>
-             <form action="" method="post">
-                 <label for="pregunta1">¿Qué tipo de productos de cerámica estás buscando personalizar? (Por ejemplo: tazas, platos, jarrones, figuras decorativas, etc.)</label>
-                 <input type="text" name="producto" id="producto">
-                 <label for="pregunta2">¿Tienes algún color o combinación de colores preferida para tu diseño?</label>
-                 <input type="text" name="correo" id="correo">
-                 <label for="pregunta3">¿Hay algún mensaje o texto que te gustaría incluir en el diseño?</label>
-                 <input type="text" name="celular" id="celular">
-                 <label for="pregunta4">¿Cuál es la cantidad de productos que necesitas y cuándo los necesitas?</label>
-                 <input type="text" name="pregunta3" id="pregunta3">
-
- 
-             </form>
-         </section>
-
-        <section>
-            <h2></h2>
-            <div>
-                <img> 
-                <h3> </h3>
-            </div>
-
+         <section>
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4 position-relative">
+                  <label for="validationTooltip01" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+                  <div class="valid-tooltip">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4 position-relative">
+                  <label for="validationTooltip02" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
+                  <div class="valid-tooltip">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4 position-relative">
+                  <label for="validationTooltipUsername" class="form-label">Correo electronico</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="validationTooltipUsernamePrepend">⎚</span>
+                    <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                    <div class="invalid-tooltip">
+                      Por favor inscribe tu correo.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 position-relative">
+                  <label for="validationTooltip03" class="form-label">¡Describe la pieza que quieres que creemos para ti!</label>
+                  <input type="text" class="form-control" id="validationTooltip03" required>
+                  <div class="invalid-tooltip">
+                    Por favor describe la pieza que quieres que creemos para ti.
+                  </div>
+                </div>
+                <div class="col-md-3 position-relative">
+                  <label for="validationTooltip04" class="form-label"> ¿Quieres tu pieza?</label>
+                  <select class="form-select" id="validationTooltip04" required>
+                    <option selected disabled value="">Esmaltada</option>
+                    <option> Mate </option>
+                  </select>
+                  <div class="invalid-tooltip">
+                    Por favor selecciona si quieres tu pieza esmaltada o mate.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+              </form>
         </section>
-
-
-
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
     </body>
     <footer class="footer-flexbox">
         <div>

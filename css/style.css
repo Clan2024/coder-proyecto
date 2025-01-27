@@ -5,6 +5,12 @@
     margin: 0%;
     padding: 0%;
 }
+
+html, body {
+    height: 100%; /* Asegura que el body y html ocupen toda la altura */
+    margin: 0; /* Elimina márgenes por defecto */
+}
+
 .container-fluid{
     padding-top: 1%;
     padding-bottom: 1%;
@@ -54,14 +60,21 @@ h1{
     color: blueviolet;
     text-align: center;
 }
+
 .productos h3{
     font-size: 30px;
-    font-family: "Edu AU VIC WA NT Arrows", cursive;
     font-weight: 600;
-    color: rgb(11, 1, 20);
+    color: rgb(20, 146, 127);
     text-align: center;
     padding-top: 4%;
 }
+
+.productos div h3:hover {
+    color: 
+    rgb(241, 147, 253);
+}
+
+
 main div h2{
     font-size: 2em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -79,7 +92,7 @@ h2{
     font-size: 25px;
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
+    text-align:center;
 }
 p{
     text-align: center;
@@ -171,3 +184,47 @@ body{
 .productos-grid-item-img {
     grid-column: span 2;
 }
+/* Pagina nosotros */
+
+.nosotros div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.nosotros-texto{
+    display: flex;
+    flex-direction: column;
+    align-content: right;
+    background-color: rgb(229, 214, 243);
+}
+.nosotros-texto p{
+    text-align: left;
+}
+.nosotros-img {
+    background-color: rgb(150, 126, 149);
+}
+
+/* Pagina personaliza */
+
+.personaliza-intro{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.personaliza-intro section{
+    padding-bottom: 3%;
+}
+
+.personaliza-forma{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
