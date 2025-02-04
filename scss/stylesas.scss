@@ -13,6 +13,7 @@ body {
     margin: 0;
 }
 
+
 .container-fluid {
     padding-top: 1%;
     padding-bottom: 1%;
@@ -25,7 +26,6 @@ body {
     color: rgb(20, 146, 127);
     font-size: 2rem;
 }
-
 
 .hero {
     display: flex;
@@ -40,9 +40,12 @@ body {
     background-size: cover;
     background-position: center;
     justify-content: center;
-    margin-top: 15vh;
+    margin-top: 6%;
 
     h2 {
+        animation-name: slide;
+        animation-duration: 1.2s;
+        animation-timing-function: ease;
         color: white;
         font-size: 3em;
         text-align: center;
@@ -53,6 +56,11 @@ body {
     }
 }
 
+@keyframes slide{
+    from{
+        margin-bottom: 100%;
+    }
+}
 .productos {
 
     justify-content: space-evenly;
@@ -80,8 +88,19 @@ body {
         }
 
         img {
+            border-radius: 8px;    
             width: 400px;
             height: 400px;
+            transition-property: width,height;
+            transition-duration: 1s;
+            
+        }
+
+        img:hover{
+
+            width: 420px;
+            height: 420px;
+
         }
 
     }
@@ -126,6 +145,8 @@ main {
         padding-bottom: 2%;
 
 
+
+
         div {
             display: flex;
             flex-direction: column;
@@ -140,7 +161,7 @@ main {
         }
 
         div {
-            img{
+            img {
                 flex: 1;
                 width: 100%;
                 height: 100%;
@@ -150,17 +171,16 @@ main {
         }
     }
 
-    }
-    .img{
-        display: flex;
-        flex-direction: column;
-
-        img{
+.img {
+dv{
+    img {
         width: 100%;
         height: 100%;
         align-items: center;
-        }
     }
+}
+}
+}
 
 /*productos*/
 main {
@@ -168,7 +188,6 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
         text-align: center;
         width: 100%;
         height: 300px;
@@ -180,7 +199,7 @@ main {
 
         h2 {
             color: rgb(6, 0, 0);
-            font-size: em;
+            font-size: 3em;
             text-align: center;
             border-bottom: 2px solid;
             border-top: 2px solid;
@@ -201,44 +220,101 @@ main {
             img {
                 height: 100%;
                 width: 100%;
+                border-radius: 8px;
             }
         }
 
         div {
-            h2 {}
-
-            p {text-align: center;
-            align-content: center;
-            text-align: center;}
+            border-radius: 8px;
+            p {
+                text-align: center;
+                align-content: center;
+                text-align: center;
+            }
         }
 
-        .productos-grid-item-2{
+        .productos-grid-item-2 {
             align-content: center;
-            background-color: rgb(136, 224, 224);
+            background-color: rgb(244, 221, 247);
             height: 200px;
             width: 100%;
         }
-        
-        .productos-grid-item-3{
+
+        .productos-grid-item-3 {
             align-content: center;
-            background-color: rgb(224, 184, 242);
+            background-color: rgb(218, 214, 247);
             height: 200px;
             width: 100%;
         }
-        
-        .productos-grid-item-4{
+
+        .productos-grid-item-4 {
             align-content: center;
-            background-color: rgb(241, 181, 128);
+            background-color: rgb(194, 220, 250);
             height: 200px;
             width: 100%;
         }
-        
-        .productos-grid-item-5{
+
+        .productos-grid-item-5 {
             align-content: center;
-            background-color: rgb(191, 184, 242);
+            background-color: rgb(173, 197, 247);
             height: 200px;
             width: 100%;
         }
+
+        .productos-grid-item-6 {
+            align-content: center;
+            background-color: #E3E8EB;
+            height: 200px;
+            width: 100%;
+        }
+
+        .productos-grid-item-7 {
+            align-content: center;
+            background-color: #CCD6D8;
+            height: 200px;
+            width: 100%;
+        }
+
+        .productos-grid-item-8 {
+            align-content: center;
+            background-color: #B7C1C3;
+            height: 200px;
+            width: 100%;
+        }
+    }
+    .productos-grid-item-9 {
+        align-content: center;
+        background-color: #889293;
+        height: 200px;
+        width: 100%;
+    }
+
+    .productos-grid-item-10 {
+        align-content: center;
+        background-color: #9790aa;
+        height: 200px;
+        width: 100%;
+    }
+
+    .productos-grid-item-11 {
+        align-content: center;
+        background-color: #a58ea3;
+        height: 200px;
+        width: 100%;
+    }
+
+    .productos-grid-item-12 {
+        align-content: center;
+        background-color: #a987ac;
+        height: 200px;
+        width: 100%;
+    }
+
+    .productos-grid-item-13{
+        align-content: center;
+        background-color: #8f6287;
+        height: 200px;
+        width: 100%;
     }
 }
 
@@ -287,10 +363,19 @@ main {
                 width: 100%;
                 height: auto;
                 border-radius: 8px;
+                transition-property: width,height;
+            transition-duration: 0.6s;
+
+            }
+            img:hover{
+                    width: 102%;
+                    height: 102%;  
             }
         }
     }
 }
+
+
 
 /*contactanos*/
 
@@ -358,6 +443,220 @@ footer {
                 padding-left: 5px;
                 text-decoration: none;
             }
+        }
+    }
+}
+
+/*medias querys*/
+/*home*/
+
+
+@media screen and (max-width: 1000px) {
+    .hero {
+
+        padding-left: 3%;
+        padding-right: 3%;
+
+
+        h2 {
+            font-size: 2em;
+        }
+    }
+}
+
+/*nosotros*/
+
+@media screen and (max-width: 748px) {
+    .nosotros {
+
+        h1 {
+            padding-top: 60px;
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            color: rgb(15, 65, 5);
+            text-align: center;
+        }
+
+        div {
+
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+
+
+            display: flex;
+            flex-direction: column-reverse;
+
+            div {
+                display: flex;
+                flex-direction: column;
+
+
+                h2 {
+                    font-size: 120%;
+                }
+
+                p {
+                    text-align: center;
+                }
+            }
+
+            div {
+                img {
+                    flex: 1;
+                    width: 100%;
+                    height: 100%;
+                    align-items: center;
+                    object-fit: cover;
+                }
+            }
+        }
+
+    }
+
+    .img {
+        display: flex;
+        flex-direction: column-reverse;
+
+        div {
+            img {
+                width: 100%;
+                height: 100%;
+                align-items: center;
+            }
+        }
+
+        div {
+            h2 {
+                font-size: 120%;
+            }
+
+            p {
+                text-align: center
+            }
+        }
+    }
+
+}
+
+/*productos*/
+@media screen and (max-width: 748px) {
+    main {
+        .productos-hero {
+        
+    
+            h2 {
+                color: rgb(6, 0, 0);
+                font-size: 2em;
+                text-align: center;
+                border-bottom: 2px solid;
+                border-top: 2px solid;
+                border-right: 2px solid;
+                border-left: 2px solid;
+            }
+        }
+    
+        .productos-grid {
+            padding-left: 1.2%;
+            padding-right: 1.2%;
+            padding-top: 1%;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 5px;
+            padding-bottom: 1%;
+            justify-content: space-between;
+    
+            div {
+                img {
+                    border-radius: 8px;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+    
+            div {
+                border-radius: 8px;
+    
+                p {
+                    text-align: center;
+                    align-content: center;
+                    text-align: center;
+                }
+            }
+    
+            .productos-grid-item-2 {
+                align-content: center;
+                background-color: rgb(136, 224, 224);
+                height: 200px;
+                width: 100%;
+            }
+    
+            .productos-grid-item-3 {
+                align-content: center;
+                background-color: rgb(224, 184, 242);
+                height: 200px;
+                width: 100%;
+            }
+    
+            .productos-grid-item-4 {
+                align-content: center;
+                background-color: rgb(241, 181, 128);
+                height: 200px;
+                width: 100%;
+            }
+    
+            .productos-grid-item-5 {
+                align-content: center;
+                background-color: rgb(191, 184, 242);
+                height: 200px;
+                width: 100%;
+            }
+        }
+    }    
+}
+
+/* personaliza*/
+@media screen and (max-width: 748px) {
+    .personaliza-intro {
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 2%;
+    
+        section {
+            h1 {
+                padding-top: 60px;
+                font-size: 30px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                color: rgb(15, 65, 5);
+                text-align: center;
+            }
+    
+            p {
+                text-align: center;
+            }
+        }
+    
+        h2 {
+            padding-top: 15%;
+            font-size: 25px;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+    
+        .personaliza-galeria {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto;
+    
+          
         }
     }
 }

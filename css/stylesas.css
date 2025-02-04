@@ -36,9 +36,12 @@ body {
   background-size: cover;
   background-position: center;
   justify-content: center;
-  margin-top: 15vh;
+  margin-top: 6%;
 }
 .hero h2 {
+  animation-name: slide;
+  animation-duration: 1.2s;
+  animation-timing-function: ease;
   color: white;
   font-size: 3em;
   text-align: center;
@@ -48,6 +51,11 @@ body {
   border-left: 2px solid;
 }
 
+@keyframes slide {
+  from {
+    margin-bottom: 100%;
+  }
+}
 .productos {
   justify-content: space-evenly;
   display: flex;
@@ -69,8 +77,15 @@ body {
   color: rgb(241, 147, 253);
 }
 .productos div img {
+  border-radius: 8px;
   width: 400px;
   height: 400px;
+  transition-property: width, height;
+  transition-duration: 1s;
+}
+.productos div img:hover {
+  width: 420px;
+  height: 420px;
 }
 
 main div h2 {
@@ -119,12 +134,7 @@ main div h2 {
   align-items: center;
   object-fit: cover;
 }
-
-.img {
-  display: flex;
-  flex-direction: column;
-}
-.img img {
+.nosotros .img dv img {
   width: 100%;
   height: 100%;
   align-items: center;
@@ -135,7 +145,6 @@ main .productos-hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
   text-align: center;
   width: 100%;
   height: 300px;
@@ -147,7 +156,7 @@ main .productos-hero {
 }
 main .productos-hero h2 {
   color: rgb(6, 0, 0);
-  font-size: em;
+  font-size: 3em;
   text-align: center;
   border-bottom: 2px solid;
   border-top: 2px solid;
@@ -165,6 +174,10 @@ main .productos-grid {
 main .productos-grid div img {
   height: 100%;
   width: 100%;
+  border-radius: 8px;
+}
+main .productos-grid div {
+  border-radius: 8px;
 }
 main .productos-grid div p {
   text-align: center;
@@ -173,25 +186,73 @@ main .productos-grid div p {
 }
 main .productos-grid .productos-grid-item-2 {
   align-content: center;
-  background-color: rgb(136, 224, 224);
+  background-color: rgb(244, 221, 247);
   height: 200px;
   width: 100%;
 }
 main .productos-grid .productos-grid-item-3 {
   align-content: center;
-  background-color: rgb(224, 184, 242);
+  background-color: rgb(218, 214, 247);
   height: 200px;
   width: 100%;
 }
 main .productos-grid .productos-grid-item-4 {
   align-content: center;
-  background-color: rgb(241, 181, 128);
+  background-color: rgb(194, 220, 250);
   height: 200px;
   width: 100%;
 }
 main .productos-grid .productos-grid-item-5 {
   align-content: center;
-  background-color: rgb(191, 184, 242);
+  background-color: rgb(173, 197, 247);
+  height: 200px;
+  width: 100%;
+}
+main .productos-grid .productos-grid-item-6 {
+  align-content: center;
+  background-color: #E3E8EB;
+  height: 200px;
+  width: 100%;
+}
+main .productos-grid .productos-grid-item-7 {
+  align-content: center;
+  background-color: #CCD6D8;
+  height: 200px;
+  width: 100%;
+}
+main .productos-grid .productos-grid-item-8 {
+  align-content: center;
+  background-color: #B7C1C3;
+  height: 200px;
+  width: 100%;
+}
+main .productos-grid-item-9 {
+  align-content: center;
+  background-color: #889293;
+  height: 200px;
+  width: 100%;
+}
+main .productos-grid-item-10 {
+  align-content: center;
+  background-color: #9790aa;
+  height: 200px;
+  width: 100%;
+}
+main .productos-grid-item-11 {
+  align-content: center;
+  background-color: #a58ea3;
+  height: 200px;
+  width: 100%;
+}
+main .productos-grid-item-12 {
+  align-content: center;
+  background-color: #a987ac;
+  height: 200px;
+  width: 100%;
+}
+main .productos-grid-item-13 {
+  align-content: center;
+  background-color: #8f6287;
   height: 200px;
   width: 100%;
 }
@@ -233,6 +294,12 @@ main .productos-grid .productos-grid-item-5 {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  transition-property: width, height;
+  transition-duration: 0.6s;
+}
+.personaliza-intro .personaliza-galeria div img:hover {
+  width: 102%;
+  height: 102%;
 }
 
 /*contactanos*/
@@ -291,6 +358,163 @@ footer div a img {
   width: 40px;
   padding-left: 5px;
   text-decoration: none;
+}
+
+/*medias querys*/
+/*home*/
+@media screen and (max-width: 1000px) {
+  .hero {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .hero h2 {
+    font-size: 2em;
+  }
+}
+/*nosotros*/
+@media screen and (max-width: 748px) {
+  .nosotros h1 {
+    padding-top: 60px;
+    font-size: 30px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: rgb(15, 65, 5);
+    text-align: center;
+  }
+  .nosotros div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .nosotros div div {
+    display: flex;
+    flex-direction: column;
+  }
+  .nosotros div div h2 {
+    font-size: 120%;
+  }
+  .nosotros div div p {
+    text-align: center;
+  }
+  .nosotros div div img {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    object-fit: cover;
+  }
+  .img {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .img div img {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  .img div h2 {
+    font-size: 120%;
+  }
+  .img div p {
+    text-align: center;
+  }
+}
+/*productos*/
+@media screen and (max-width: 748px) {
+  main .productos-hero h2 {
+    color: rgb(6, 0, 0);
+    font-size: 2em;
+    text-align: center;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-left: 2px solid;
+  }
+  main .productos-grid {
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+    padding-top: 1%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+    padding-bottom: 1%;
+    justify-content: space-between;
+  }
+  main .productos-grid div img {
+    border-radius: 8px;
+    height: 100%;
+    width: 100%;
+  }
+  main .productos-grid div {
+    border-radius: 8px;
+  }
+  main .productos-grid div p {
+    text-align: center;
+    align-content: center;
+    text-align: center;
+  }
+  main .productos-grid .productos-grid-item-2 {
+    align-content: center;
+    background-color: rgb(136, 224, 224);
+    height: 200px;
+    width: 100%;
+  }
+  main .productos-grid .productos-grid-item-3 {
+    align-content: center;
+    background-color: rgb(224, 184, 242);
+    height: 200px;
+    width: 100%;
+  }
+  main .productos-grid .productos-grid-item-4 {
+    align-content: center;
+    background-color: rgb(241, 181, 128);
+    height: 200px;
+    width: 100%;
+  }
+  main .productos-grid .productos-grid-item-5 {
+    align-content: center;
+    background-color: rgb(191, 184, 242);
+    height: 200px;
+    width: 100%;
+  }
+}
+/* personaliza*/
+@media screen and (max-width: 748px) {
+  .personaliza-intro {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+  }
+  .personaliza-intro section h1 {
+    padding-top: 60px;
+    font-size: 30px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: rgb(15, 65, 5);
+    text-align: center;
+  }
+  .personaliza-intro section p {
+    text-align: center;
+  }
+  .personaliza-intro h2 {
+    padding-top: 15%;
+    font-size: 25px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
+  .personaliza-intro .personaliza-galeria {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+  }
 }
 
 /*# sourceMappingURL=stylesas.css.map */
