@@ -7,8 +7,8 @@
 }
 
 html, body {
-    height: 100%; /* Asegura que el body y html ocupen toda la altura */
-    margin: 0; /* Elimina márgenes por defecto */
+    height: 100%;
+    margin: 0; 
 }
 
 .container-fluid{
@@ -35,7 +35,8 @@ html, body {
     justify-content: center;
     margin-top: 15vh;
 }
-.hero-titulo{
+
+.hero {
     color: white;
     font-size: 3em;
     text-align: center;
@@ -44,6 +45,7 @@ html, body {
     border-right: 2px solid;
     border-left: 2px solid;
 }
+
 .productos{
     justify-content: space-evenly;
     display: flex;
@@ -114,16 +116,7 @@ body{
     flex-wrap: wrap;
 }
 
-/* .footer-flexbox{
-    justify-content: space-evenly;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    list-style: none;
-    background-color: rgb(153, 203, 243);
-    padding-top: 1%;
-    padding-bottom: 1%;
-} */
+/*footer*/
 
 .footer-flexbox{
     display: flex;
@@ -150,42 +143,75 @@ body{
     color: rgb(253, 252, 253);
     font-size: 19px;
 }
-/*pagina productos
-*/
-.productos-banner{
+/*pagina productos*/
+
+.productos-hero{
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
     width: 100%;
-    background-image: url("../img/banner-ceramica.jpg");
+    height: 300px;
+    background-image: url("../img/close-up-arrangement-modern-vases.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
-    align-items: center;
     justify-content: center;
-    margin-top: 15vh;
 }
-.productos-banner h2 {
-    color: white;
+.productos-hero-titulo{
+    color: rgb(6, 0, 0);
+    font-size: em;
+    text-align: center;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-left: 2px solid;
 }
+
+.productos-grid-item-2{
+    align-content: center;
+    background-color: rgb(136, 224, 224);
+    height: 200px;
+    width: 100%;
+}
+
+.productos-grid-item-3{
+    align-content: center;
+    background-color: rgb(224, 184, 242);
+    height: 200px;
+    width: 100%;
+}
+
+.productos-grid-item-4{
+    align-content: center;
+    background-color: rgb(241, 181, 128);
+    height: 200px;
+    width: 100%;
+}
+
+.productos-grid-item-5{
+    align-content: center;
+    background-color: rgb(191, 184, 242);
+    height: 200px;
+    width: 100%;
+}
+
+
 .productos-grid{
-    margin-left: 5px;
-    margin-top: 50px;
     padding-top: 1%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
     padding-bottom: 1%;
+    justify-content: space-between;
 }
-.productos-grid img {
-    height: 300px;
-    width: 300px;
+.productos-grid-item img {
+    height: 100%;
+    width: 100%;
 }
-.productos-grid-item-img {
-    grid-column: span 2;
-}
+
+
 /* Pagina nosotros */
 
 .nosotros div{
@@ -194,7 +220,7 @@ body{
     align-items: center;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 5%;
+    padding-top: 2%;
     padding-bottom: 2%;
 }
 
@@ -266,8 +292,7 @@ body{
     padding-right: 5%;
     padding-bottom: 7%;
 }
-
-
+ 
  
 
 
