@@ -36,9 +36,7 @@ html, body {
     margin-top: 15vh;
 }
 
-
-
-.hero-titulo{
+.hero {
     color: white;
     font-size: 3em;
     text-align: center;
@@ -47,6 +45,7 @@ html, body {
     border-right: 2px solid;
     border-left: 2px solid;
 }
+
 .productos{
     justify-content: space-evenly;
     display: flex;
@@ -162,7 +161,7 @@ body{
 }
 .productos-hero-titulo{
     color: rgb(6, 0, 0);
-    font-size: 3em;
+    font-size: em;
     text-align: center;
     border-bottom: 2px solid;
     border-top: 2px solid;
@@ -198,24 +197,7 @@ body{
     width: 100%;
 }
 
-.productos-banner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    width: 100%;
-    background-image: url("../img/banner-ceramica.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15vh;
-}
-.productos-banner h2 {
-    color: white;
-}
+
 .productos-grid{
     padding-top: 1%;
     display: grid;
@@ -311,59 +293,6 @@ body{
     padding-bottom: 7%;
 }
  
-/* productos opcion 2*/
-.productos-hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    width: 100%;
-    height: 300px;
-    background-image: url("../img/close-up-arrangement-modern-vases.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-    justify-content: center;
-}
-.productos-hero-titulo{
-    color: rgb(6, 0, 0);
-    font-size: 3em;
-    text-align: center;
-    border-bottom: 2px solid;
-    border-top: 2px solid;
-    border-right: 2px solid;
-    border-left: 2px solid;
-}
-
-.productos-grid-item-2{
-    align-content: center;
-    background-color: rgb(136, 224, 224);
-    height: 200px;
-    width: 100%;
-}
-
-.productos-grid-item-3{
-    align-content: center;
-    background-color: rgb(224, 184, 242);
-    height: 200px;
-    width: 100%;
-}
-
-.productos-grid-item-4{
-    align-content: center;
-    background-color: rgb(241, 181, 128);
-    height: 200px;
-    width: 100%;
-}
-
-.productos-grid-item-5{
-    align-content: center;
-    background-color: rgb(191, 184, 242);
-    height: 200px;
-    width: 100%;
-}
-
  
 
 
