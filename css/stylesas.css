@@ -84,8 +84,8 @@ body {
   transition-duration: 1s;
 }
 .productos div img:hover {
-  width: 420px;
-  height: 420px;
+  width: 410px;
+  height: 410px;
 }
 
 main div h2 {
